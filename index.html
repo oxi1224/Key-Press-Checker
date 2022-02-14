@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Key Tester</title>
+    <script src="https://unpkg.com/phosphor-icons"></script>
+</head>
+<body onkeydown="assignKey(event)" onkeyup="specialKeys(event)">
+    <div class="keyboard-field" id="keyboard">
+        <div class="row">
+            <div class="key" style="margin-right: 76px;" id='Escape'>ESC</div>
+            <div class="key">F1</div>
+            <div class="key">F2</div>
+            <div class="key">F3</div>
+            <div class="key" style="margin-right: 42px;">F4</div>
+            <div class="key">F5</div>
+            <div class="key">F6</div>
+            <div class="key">F7</div>
+            <div class="key" style="margin-right: 42px;">F8</div>
+            <div class="key">F9</div>
+            <div class="key">F10</div>
+            <div class="key">F11</div>
+            <div class="key" style="margin-right: 13px;">F12</div>
+            <div class="key">Print<br>Screen</div>
+            <div class="key">Scroll<br>Lock</div>
+            <div class="key">Pause</div>
+        </div>
+        <div class="row" style="margin-top: 15px;">
+            <div class="key" id="Backquote">`~</div>
+            <div class="key">1</div>
+            <div class="key">2</div>
+            <div class="key">3</div>
+            <div class="key">4</div>
+            <div class="key">5</div>
+            <div class="key">6</div>
+            <div class="key">7</div>
+            <div class="key">8</div>
+            <div class="key">9</div>
+            <div class="key">0</div>
+            <div class="key" id="Minus">-<br>_</div>
+            <div class="key" id="Equal">=<br>+</div>
+            <div class="key backspace" style="margin-right: 13px;" id="Backspace">Backspace</div>
+            <div class="key">Insert</div>
+            <div class="key">Home</div>
+            <div class="key">Page<br>Up</div>
+        </div>
+        <div class="row">
+            <div class="key tab">Tab</div>
+            <div class="key">Q</div>
+            <div class="key">W</div>
+            <div class="key">E</div>
+            <div class="key">R</div>
+            <div class="key">T</div>
+            <div class="key">Y</div>
+            <div class="key">U</div>
+            <div class="key">I</div>
+            <div class="key">O</div>
+            <div class="key">P</div>
+            <div class="key" id='BracketLeft''>{<br>[</div>
+            <div class="key" id='BracketRight'>}<br>]</div>
+            <div class="key slash" style="margin-right: 13px;" id='Backslash'>\<br>|</div>
+            <div class="key">Delete</div>
+            <div class="key">End</div>
+            <div class="key">Page<br>Down</div>
+        </div>
+        <div class="row">
+            <div class="key capslock" id="CapsLock"><i class="ph-arrow-fat-down"></i></div>
+            <div class="key">A</div>
+            <div class="key">S</div>
+            <div class="key">D</div>
+            <div class="key">F</div>
+            <div class="key">G</div>
+            <div class="key">H</div>
+            <div class="key">J</div>
+            <div class="key">K</div>
+            <div class="key">L</div>
+            <div class="key" id="Semicolon">;<br>:</div>
+            <div class="key" id="Quote">'<br>"</div>
+            <div class="key enter" style="margin-right: 90px;">Enter</div>
+        </div>
+        <div class="row">
+            <div class="key shiftL" id="ShiftLeft"><i class="ph-arrow-fat-up"></i></div>
+            <div class="key">Z</div>
+            <div class="key">X</div>
+            <div class="key">C</div>
+            <div class="key">V</div>
+            <div class="key">B</div>
+            <div class="key">N</div>
+            <div class="key">M</div>
+            <div class="key" id="Comma"><<br>,</div>
+            <div class="key" id="Period">><br>.</div>
+            <div class="key" id="Slash">/<br>?</div>
+            <div class="key shiftR" style="margin-right: 88px;" id="ShiftRight"><i class="ph-arrow-fat-up"></i></div>
+            <div class="key" id="ArrowUp"><i class="ph-arrow-up"></i></div>
+        </div>
+        <div class="row">
+            <div class="key longer" id="ControlLeft">ControlL</div>
+            <div class="key longer" id="OSLeft"><i class="ph-windows-logo-fill" style="font-size: 40px;"></i></div>
+            <div class="key longer" id="AltLeft">AltL</div>
+            <div class="key space"> </div>
+            <div class="key longer" id="AltRight">AltR</div>
+            <div class="key longer">Context<br>Menu</div>
+            <div class="key longer" style="margin-right: 13px;" id="ControlRight">ControlR</div>
+            <div class="key" id="ArrowLeft"><i class="ph-arrow-left"></i></div>
+            <div class="key" id="ArrowDown"><i class="ph-arrow-down"></i></div>
+            <div class="key" id="ArrowRight"><i class="ph-arrow-right"></i></div>
+        </div>
+    </div>
+    <div class="key-log">
+        <h1>Keys pressed:</h1>
+        <p id="log"></p>
+    </div>
+</body>
+<script src="main.js"></script>
+</html>

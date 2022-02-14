@@ -1,0 +1,90 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Manrope', sans-serif;
+}
+body{
+    background-color: black;
+}
+.keyboard-field{
+    flex-wrap: wrap;
+    width: fit-content;
+    margin: 50px auto;
+    border-radius: 5px;
+    font-size: 18px;
+}
+.key{
+    color: white;
+    background-color: rgba(255, 255, 255, 0.1);
+    width: fit-content;
+    width: 70px;
+    height: 70px;
+    padding: 5px;
+    margin: 3px;
+    text-align: center;
+    border-radius: 2px;
+    font-weight: 550;
+    box-shadow: 1px 1px 0px 1px rgba(153, 153, 153, 0.5);
+    padding-top: 10px;
+}
+.key > span{
+    display: inline-block !important;
+    vertical-align: middle !important;
+}
+.backspace{
+    width: 144px;
+} 
+.tab, .slash{
+    width: 107px;
+}
+.capslock{
+    width: 129px;
+}
+.enter{
+    width: 161px;
+}
+.shiftL{
+    width: 158px;
+}
+.shiftR{
+    width: 207px;
+}
+.longer{
+    width: 97.5px;
+}
+.space{
+    width: 510px;
+    content: '';
+}
+.toggledKey{
+    background-color: rgba(255, 255, 255, 0.75);
+    color: black;
+}
+.keyPressed{
+    background-color: rgba(255, 255, 255, 0.9);
+}
+.row{
+    min-width: 100% !important;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+.key-log{
+    width: 1377px;
+    margin: 0 auto;
+    text-align: left;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: white;
+    box-shadow: 1px 1px 0px 1px rgba(153, 153, 153, 0.5);
+    border-radius: 5px;
+    padding: 1rem;
+    overflow: hidden;
+}
+.key-log p{
+    font-size: 20px;
+    width: fit-content;
+    overflow: hidden;
+    white-space: nowrap;
+    margin-top: 25px;
+}
