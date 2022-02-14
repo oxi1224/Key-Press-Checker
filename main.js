@@ -17,7 +17,11 @@ function assignKey(event) {
             keys[i].classList.add('toggledKey');
             keys[i].classList.add('keyPressed');
             let log = document.getElementById('log')
-            log.textContent = `<${key}> ${log.textContent}`
+            if (key == ''){
+                log.textContent = `<${keys[i].id}> ${log.textContent}`
+            } else {
+                log.textContent = `<${key}> ${log.textContent}`
+            }
         }
     }
 } 
